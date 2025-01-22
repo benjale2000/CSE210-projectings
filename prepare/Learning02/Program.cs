@@ -6,26 +6,26 @@ class Program
     {
         Console.WriteLine("Hello Learning02 World!");
 
-        Job job1 = new Job();
-        job1._jobTitle = "Sofware Engineer";
-        job1._company = "Microsoft";
-        job1._startYear = 2019;
-        job1._endYear = 2022;
+        Job Job1 = new Job();
+        Job1._jobTitle = "Sofware Engineer";
+        Job1._company = "Microsoft";
+        Job1._startYear = 2019;
+        Job1._endYear = 2022;
         
-        Job job2 = new Job();
-        job2._jobTitle = "Manager";
-        job2._company = "Apple";
-        job2._startYear = 2022;
-        job2._endYear = 2023;
+        Job Job2 = new Job();
+        Job2._jobTitle = "Manager";
+        Job2._company = "Apple";
+        Job2._startYear = 2022;
+        Job2._endYear = 2023;
 
-        job1.DisplayJobDetails();
-        job2.DisplayJobDetails();
+        Job1.DisplayJobDetails();
+        Job2.DisplayJobDetails();
 
         Resume myResume = new Resume();
         myResume._name = "Mina Hope";
 
-        myResume._jobs.Add(job1);
-        myResume._jobs.Add(job2);
+        myResume._Jobs.Add(Job1);
+        myResume._Jobs.Add(Job2);
 
         myResume.DisplayResume();
     }

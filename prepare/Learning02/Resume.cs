@@ -3,16 +3,16 @@ using System;
 public class Resume
 {
     public string _name = "";
-    public List<job> _jobs = new List<job>();
+    public List<Job> _Jobs = new List<Job>();
 
     public void DisplayResume()
     {
         Console.WriteLine($"Name: {_name}");
         Console.WriteLine("Jobs:");
 
-        foreach (job job in _jobs)
+        foreach (Job job in _Jobs)
         {
-            job.DisplayJobDetails();
+            Job.DisplayJobDetails();
         }
     }
 }
