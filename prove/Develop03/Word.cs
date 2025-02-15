@@ -13,11 +13,7 @@ public class Word
 
     public bool IsHidden(string word)
     {
-        foreach (char letter in word)
-        {
-            _letter = char.ToString(letter);
-        }
-        if ("_" == _letter)
+        if ("_" == word)
         {
             return true;
         }// some sort of code to know if hidden returns true or false
