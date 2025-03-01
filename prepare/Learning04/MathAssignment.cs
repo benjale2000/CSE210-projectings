@@ -17,4 +17,9 @@ public class MathAssignment : Assignment
         string studentname = GetSummary();
         return $"{_textbooksection} {_problems} {studentname}";
     }
+
+    public MathAssignment (string studentname, string topic) : base(studentname, topic)
+    {
+
+    }
 }
